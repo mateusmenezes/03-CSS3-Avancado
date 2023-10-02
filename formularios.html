@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>estilizando formularios</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				font-family: "trebuchet MS",helvetica, sans-serif;
+			}
+			fieldset {
+				margin: 1em 0;
+				padding: 1em;
+				border: 1px solid #ccc;
+				background: #f8f8f8;
+			}
+			legend {
+				font-weight: bold;
+
+			}
+			label {
+				display: block;
+				cursor: pointer; /*tem a função de mostrar ao usuario que pode ser clicado*/
+			}
+			/*input [type=text]{  seletor de atributo: tem a função de formatar somente o atributo type text( por ser uma função nova, alguns navegadores não terão suporte)
+				width: 20em;
+			}*/
+			input {
+				width: 20em;
+			}
+			textarea {
+				width: 20em;
+				height: 10em;
+			}
+			input.lembrar {
+				width: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>estilizando formularios</h2>
+		<form>
+			<fieldset><!-- fieldset serve para agrupar dados semelhantes-->
+			<legend>dados de contato</legend> <!--serve para legenda do agrupamento-->
+			<div>
+				<label for="nome">nome:</label><!-- significa etiqueta ou rotulo: serve para identificar as caixas de textos-->
+				<input type="text" name="nome" id="nome"> <!-- o id serve pra marcar e o for para indicar qual o label tem que identificar-->
+			</div>
+
+			</fieldset>
+			<fieldset>
+				<legend>comentarios</legend>
+				<div>
+					<label for="comentario" >comentario:</label>
+					<textarea name="comentario" id="comentario"></textarea>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>lembrar de mim</legend>
+				
+				<div >
+					<label>
+					<input class="lembrar" type="radio" name="lembrar" id="sim">sim
+					</label>
+				</div>
+				<div >
+					<label>
+					<input class="lembrar" type="radio" name="lembrar" id="nao">não
+					</label>
+				</div>
+			</fieldset>
+		</form>
+		
+	</body>
+</html>

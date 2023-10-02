@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>layout de largura liquida</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				background: #f2f2f2;
+			}
+			#container {
+				width: 85%;/* 720px-> 85%*/
+				 /* para layout de largura fixa usa-se medidas fixas como em px, mas para layout de largura liquido usa-se a porcentagem*/
+				margin: 0 auto;
+				background: #FFF;
+				min-width: 720px; /*para largura minima que deve parar de diminuir, já o max-width serve para largura máxima. Na height funciona com a mesmma logica*/
+			}
+			#marca {
+				width: 100%;
+				height: 100px;
+				background: #9e9e9e;
+				text-align: center;
+				line-height: 100px;
+			}
+			#conteudo {
+				border: 2px solid red;
+				width: 75%; /* 520px-> 75% */
+				float: right;
+			}
+			#navegacao {
+				width: 23%; /* 180px-> 23% */
+				float: left;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				background: #d1d1d1;
+			}
+			#navegacao ul {
+				list-style-type: none;
+			}
+			#navegacao li a {
+				text-decoration: none;
+				color: black; 
+			}
+			#conteudo-primario {
+				width: 64%; /* 320px-> 63% */
+				border: 2px solid red;
+				float: left;
+			}
+			#conteudo-secundario {
+				border: 2px solid green;
+				float: right;
+				width: 34%; /* 180px-> 34% */
+				border: 2px solid black;
+
+			}
+			#rodape {
+				clear: both;
+				padding: 5px;
+				background:#c4c4c4;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="marca">
+				marca
+			</div>
+			<div id="conteudo">
+				<div id="conteudo-primario">
+				 conteudo primario
+				</div>
+				<div id="conteudo-secundario">
+					conteudo secundario
+				</div>
+			</div>
+			<div id="navegacao">
+				navegação<br>
+				<ul>
+					<li><a href="">exemplo01</a></li>
+					<li><a href="">exemplo02</a></li>
+					<li><a href="">exemplo03</a></li>
+				</ul>
+			</div>
+			<div id="rodape">
+				rodape
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+ul a{
+	/*border: 1px solid red;*/
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-indent: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-decoration: none;
+	background: url(imagens/menu.png) no-repeat left bottom;
+	
+	
+	
+}
+
+a:hover{
+	background: gray;
+	/*background-position: left bottom;*/
+	color: #FFF;
+}

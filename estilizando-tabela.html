@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>estilizando tabelas</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			table {
+				width: 600px;
+				border-collapse: collapse;/* o border-collapse tem a função de manter o espaçamento padrão das bordas da tabela e de tirar os espaçamentos. SO TEM DUAS OPÇOES: SEPARATE ou COLLAPSE*/
+			}
+			th{
+				text-transform: uppercase; /* tem a função de deixar as letras todas maiusculas*/
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #111;
+				text-align: left;
+				font-size: 90%;
+				letter-spacing: 0.1em; /*serve para dar espaçamentos entre as letras*/
+			}
+			/*tr:nth-child(even) {background:gray;}SERVE PARA FAZER O MODELO DE ZEBRA, PINTANDO UMA LINHA E OUTRA NÃO*/
+
+		</style>
+	</head>
+	<body>
+		<h2>estilizando tabelas</h2>
+		<table>
+			<tr>
+				<th> codigo</th>
+				<th> produto</th>
+				<th> preço</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>notebook</td>
+				<td>R$2.500</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>celulares</td>
+				<td>R$2.500</td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>iphone</td>
+				<td>R$2.500</td>
+			</tr>
+			<tr>
+				<td>004</td>
+				<td>nexus</td>
+				<td>R$2.500</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

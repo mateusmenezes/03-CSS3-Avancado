@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>especificidade</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			p {
+				color: red !important; /* o texto !important indica que esse atributo é mais importante que o outro*/
+			}
+			p {
+				color: gray; /* quando tem dois seletores iguais, a última formatação que conta*/
+			}
+			/* se um seletor for mais  específico que o outro a regra mais específica que será aplicada( terá precedencia sobre regras mais gerais)*/
+
+
+			/* em ordem de precedencia, primeiro tag, id e class*/
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>
+				lorem ipsum
+			</p>
+			<p>
+				lorem ipsum
+			</p>
+		</div>
+
+	</body>
+
+</html>

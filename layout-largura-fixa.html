@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>layout de largura fixa</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				background: #f2f2f2;
+			}
+			#container {
+				width: 720px;
+				margin: 0 auto;
+				background: #FFF;
+			}
+			#marca {
+				height: 100px;
+				background: #9e9e9e;
+				text-align: center;
+				line-height: 100px;
+			}
+			#conteudo {
+				border: 2px solid red;
+				width: 520px;
+				float: right;
+			}
+			#navegacao {
+				width: 180px;
+				float: left;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				background: #d1d1d1;
+			}
+			#navegacao ul {
+				list-style-type: none;
+			}
+			#navegacao li a {
+				text-decoration: none;
+				color: black; 
+			}
+			#conteudo-primario {
+				width: 320px;
+				border: 2px solid red;
+				float: left;
+			}
+			#conteudo-secundario {
+				border: 2px solid green;
+				float: right;
+				width: 180px;
+				border: 2px solid black;
+
+			}
+			#rodape {
+				clear: both;
+				padding: 5px;
+				background:#c4c4c4;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="marca">
+				marca
+			</div>
+			<div id="conteudo">
+				<div id="conteudo-primario">
+				 conteudo primario
+				</div>
+				<div id="conteudo-secundario">
+					conteudo secundario
+				</div>
+			</div>
+			<div id="navegacao">
+				navegação<br>
+				<ul>
+					<li><a href="">exemplo01</a></li>
+					<li><a href="">exemplo02</a></li>
+					<li><a href="">exemplo03</a></li>
+				</ul>
+			</div>
+			<div id="rodape">
+				rodape
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

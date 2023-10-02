@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>navegação com abas</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 720px;
+		}
+		ul li {
+			border: 2px solid red;
+			float: left;
+			background: url('imagens/aba-direita.png') no-repeat top right;
+
+		}
+		li a {
+			display: block;
+			padding: 0 2em;
+			line-height: 3em;
+			text-decoration: none;
+			background: url('imagens/aba-esquerda.png') no-repeat  top left;
+			color: #FFF;
+		}
+
+		a:hover{
+			color: gray;
+		}
+		ul #atual {
+			background: url(imagens/aba-direita-atual.png) no-repeat top right;
+		}
+		#atual a {
+			background: url(imagens/aba-esquerda-atual.png) no-repeat top left;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h2>Home</h2>
+	<ul>
+		<li id="atual"><a href="">Home</a></li> <!-- a id atual deve ficar dentro da pagina que esta sendo a atual por exemplo: se estiver navegando na pagina de serviço, ela deve ser colocada dentro do <li> de serviço-->
+		<li><a href="">serviços</a></li>
+		<li><a href="">sobre</a></li>
+		<li><a href="">noticias</a></li>
+	</ul>
+
+</body>
+</html>
